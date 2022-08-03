@@ -1,0 +1,54 @@
+@import 'macro-css';
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #E7F6FF;
+}
+
+header {
+  border-bottom: 1px solid #EAEAEA;
+  h3, p {
+    margin: 0;
+  }
+}
+
+.content {
+  h1 {
+    margin: 0;
+  }
+}
+
+.card {
+  width: 220px;
+  padding: 30px;
+  background: #FFFFFF;
+  border: 1px solid #F3F3F3;
+  border-radius: 40px;
+
+  h5 {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  span {
+    font-size: 13px;
+    opacity: 0.5;
+    text-transform: uppercase;
+  }
+
+  b {
+    font-size: 14px;
+  }
+}
+
+.button {
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  border-radius: 8px;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
