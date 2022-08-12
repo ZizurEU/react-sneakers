@@ -58,7 +58,7 @@ header {
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -84,85 +84,3 @@ header {
   }
 }
 
-.drawer {
-  position: absolute;
-  width: 420px;
-  height: 100%;
-  right: 0;
-  background: #FFFFFF;
-  box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-
-  .items {
-    overflow: auto;
-    margin-bottom: 40px;
-  }
-
-  h2 {
-    margin: 0;
-  }
-}
-
-.cartTotalBlock {
-  margin-top: auto;
-  width: 100%;
-  
-  .dash {
-    width: 50%;
-    height: 16px;
-    border: 1px dashed #DFDFDF;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-  }
-
-  button {
-    width: 100%;
-    height: 55px;
-    background: #9DD558;
-    border-radius: 18px;
-    border: 0;
-    font-weight: 600;
-    font-size: 16px;
-    color: #FFFFFF;
-    cursor: pointer;
-    transition: background 0.1s ease-in-out;
-
-    &:hover {
-      background: lighten($color: #9DD558, $amount: 5%)
-    }
-
-    &:active {
-      background: darken($color: #9DD558, $amount: 10%)
-    }
-  }
-}
-
-.cartItem {
-  border: 1px solid #F3F3F3;
-  border-radius: 20px;
-  overflow: hidden;
-  padding: 20px;
-  p {
-    margin: 0;
-    font-size: 16px;
-  }
-
-  b {
-    font-size: 14px;
-  }
-
-  .sneakers {
-    transform: translateY(-5px);
-  }
-
-  .removeBtn {
-    opacity: 0.5;
-    transition: opacity 0.2s ease-in-out;
-    cursor: pointer;
-    
-    &:hover {
-      opacity: 1;
-    }
-  }
-}
